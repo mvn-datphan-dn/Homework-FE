@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>- What are the differences between a variable that is: `null`, `undefined`?</h2>
+    <p>Giống nhau: đều là biến không có giá trị</p>
+    <p>Khác nhau: </p>
+    <p>null: có nghĩa là giá trị rỗng hoặc giá trị không tồn tại.
+         Nó có thể được sử dụng để gán cho một biến như là một đại diện không có giá trị</p>
+    <p>undefined: có nghĩa là không xác định, là khi 1 biến được khai báo, nhưng lại không được gắn bất kì giá trị nào</p>
+    <hr>
+    <h2>- What is `use strict`? what are the advantages and disadvantages to using it?</h2>
+    <p>Use strict dịch sang tiếng việt thì có nghĩa là sử dụng sự nghiêm ngặt. 
+        Khi một đoạn lệnh được khai báo use strict thì tất cả các dòng code ở phía dưới 
+        dòng khai báo use strict sẽ được quản lý một cách nghiêm ngặt hơn về cú pháp.</p>
+    <p>Từ khóa use strict có thể đươc sử dụng ở hai vị trí:
+		Đặt ở đầu file hay đầu code JavaScript có tác dụng cho toàn bộ code JavaScript trong file đó. 
+        Đặt ở đầu một hàm có tác dụng cho code trong hàm đó mà thôi.</p>
+    <p>-Ưu điểm:</p>
+	<p>Ngăn chặn sử dụng, và báo lỗi khi người lập trình thực hiện những xử lý được coi là không an toàn, những xử lý mà có thể là ngoài ý muốn.</p>
+	<p>Vô hiệu hoá các tính năng có thể gây nhầm lẫn, hoặc không nên được sử dụng.</p>
+	<p>Ngăn chặn sử dụng một số từ mà có thể sẽ được sử dụng làm keywork trong tương lai.</p>
+	<p>-Nhược điểm: </p>
+	<p>Mất đi tính đơn giản, mềm dẻo của ECMAScript thay vào đó là những qui tắc cứng nhắc</p>
+    <p>Khó tiếp cận với những người mới làm quen</p>
+    <hr>
+    <h2>What are the differences between `==` and `===`? Write an example for each case (if any)?</h2>
+    <p>`==` : dùng để so sánh giá trị</p>
+    <p>`===`: dùng để so sánh giá trị, kiểu dữ liệu, vùng nhớ (ví dụ 1 object có 1 vùng nhớ riêng biệt)</p>
+    <hr>
+    <h2>- Give a list of `Falsy` values in Javascript.</h2>
+    <p>undefined, null, false, 0, -0, 0n, NaN, ""</p>
+    
+</body>
+<script src="index.js"></script>
+</html>
