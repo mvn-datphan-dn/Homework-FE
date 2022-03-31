@@ -179,8 +179,13 @@ outline: none;
 .list a:hover {
     opacity: 0.6;
 }
-a.icon-delete {
+i.del {
     color: #e76f51;
+    font-size: 20px;
+    cursor: pointer;
+}
+i.del:hover {
+    opacity: 0.6;
 }
 
 /* Create */

@@ -10,7 +10,7 @@ function loadDoc(data) {
                 '</td><td><img src="'+element.avatar+
                 '" alt="Avatar"></td><td>'+element.first_name+
                 '</td><td>'+element.last_name+
-                '</td><td>'+element.email+'</td><td><a href="./edit.html" onclick="edit('+element.id+')" class="icon-edit"><i class="fa-solid fa-pen-to-square"></i></a><a href="" class="icon-delete" onclick="delUser('+element.id+')"><i class="fa-solid fa-trash"></i></a></td></tr>'
+                '</td><td>'+element.email+'</td><td><a href="./edit.html" onclick="edit('+element.id+')" class="icon-edit"><i class="fa-solid fa-pen-to-square"></i></a><i class="fa-solid fa-trash del" onclick="delUser('+element.id+')"></i></td></tr>'
     });
     document.getElementById("list").innerHTML = html;
 }
@@ -18,8 +18,11 @@ loadDoc(data)
 function delUser(id) {
     for (let i = 0; i < data.length; i++) {
         if(data[i].id==id) {
-            data.splice(i, 1)
-            localStorage.list = JSON.stringify(data)
+            if(confirm("Are you sure delete "+data[i].first_name)) {
+                data.splice(i, 1)
+                localStorage.list = JSON.stringify(data)
+                loadDoc(data)
+            }
         }
     }
 }
