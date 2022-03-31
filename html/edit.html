@@ -23,7 +23,7 @@
                 </h2>
                 <form action="" class="layout">
                     <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName">
+                    <input type="text" id="firstName" required>
                     <label for="lastName">Last Name:</label>
                     <input type="text" id="lastName">
                     <label for="email">Email:</label>
@@ -33,9 +33,13 @@
                     <input type="button" onclick="update()" value="Update">
                     <input type="button" value="Reset" class="reset" onclick="window.location.reload()">
                 </form>
+                <div class="notifica" id="notifica">
+
+                </div>
             </div>
         </section>
     </main>
+    <script src="https://kit.fontawesome.com/9999051f68.js" crossorigin="anonymous"></script>
     <script src="../js/edit.js"></script>
 </body>
 </html>

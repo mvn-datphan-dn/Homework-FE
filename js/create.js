@@ -13,15 +13,19 @@ function create() {
     let lastName = document.getElementById("lastName").value
     let email = document.getElementById("email").value
     let avatar = document.getElementById("avatar")
-    console.log(avatar.files.item(0).name);
-    let newdata = {
-        id: id,
-        first_name: firstName,
-        last_name: lastName,
-        email: email,
-        avatar: "../img/"+avatar.files.item(0).name
+    if(!firstName||!lastName||!email||!avatar.files.item(0)) {
+        let html = '<i class="fa-solid fa-triangle-exclamation"></i><p class="notifica">Please complete all information!</p>'
+        document.getElementById("notifica").innerHTML = html
+    }else {
+        let newdata = {
+            id: id,
+            first_name: firstName,
+            last_name: lastName,
+            email: email,
+            avatar: "../img/"+avatar.files.item(0).name
+        }
+        data.push(newdata)
+        localStorage.list = JSON.stringify(data)
+        window.location = "../html/index.html"
     }
-    data.push(newdata)
-    localStorage.list = JSON.stringify(data)
-    window.location = "../html/index.html"
 }
