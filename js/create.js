@@ -26,6 +26,7 @@ function create() {
         }
         data.push(newdata)
         localStorage.list = JSON.stringify(data)
+        alert("Successful add '"+firstName+"'")
         window.location = "../html/index.html"
     }
 }

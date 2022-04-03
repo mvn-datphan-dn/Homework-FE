@@ -18,7 +18,7 @@ loadDoc(data)
 function delUser(id) {
     for (let i = 0; i < data.length; i++) {
         if(data[i].id==id) {
-            if(confirm("Are you sure delete "+data[i].first_name)) {
+            if(confirm("Are you sure delete '"+data[i].first_name+"'")) {
                 data.splice(i, 1)
                 localStorage.list = JSON.stringify(data)
                 loadDoc(data)
