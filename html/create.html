@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Create</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="./index.html" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Logo_manager.one.png" alt=""></a>
+            <i class="fa-solid fa-power-off logout"></i>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <section class="formCreate">
+            <div class="container">
+                <h2 class="title">
+                    Create new
+                </h2>
+                <form action="" class="layout">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <label for="avatar">Avatar:</label>
+                    <input type="file" id="avatar">
+                    <input type="button" onclick="create()" value="Submit"></input>
+                    <input type="reset" value="Reset">
+                </form>
+                <div class="notifica" id="notifica">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/9999051f68.js" crossorigin="anonymous"></script>
+    <script src="../js/create.js"></script>
+</body>
+</html>
